@@ -1,6 +1,6 @@
 import {Batch, KafkaMessage, Offsets, OffsetsByTopicPartition} from "kafkajs";
 
-export type ConsumerRunConfig = {
+export interface ConsumerRunConfig {
   autoCommit?: boolean
   autoCommitInterval?: number | null
   autoCommitThreshold?: number | null
