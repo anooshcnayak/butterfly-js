@@ -1,0 +1,43 @@
+{
+  "name": "butterfly",
+  "version": "1.0.0",
+  "description": "events pub/sub - typescript",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "mocha -r ts-node/register --exit test/**/*.ts",
+    "build": "rm -rf lib && tsc -p ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "ssh://git@repo.gameskraft.in/ateam/butterfly.git"
+  },
+  "keywords": [
+    "sdk",
+    "nodejs",
+    "typescript",
+    "kafka",
+    "events"
+  ],
+  "devDependencies": {
+    "@types/chai": "^4.2.12",
+    "@types/es6-promise": "^3.3.0",
+    "@types/lodash": "^4.14.161",
+    "@types/mocha": "^8.0.3",
+    "@types/node": "^14.0.23",
+    "@types/sinon": "^9.0.5",
+    "@types/sinon-chai": "^3.2.4",
+    "@types/uuid": "^8.3.0",
+    "chai": "^4.2.0",
+    "lodash": "^4.17.20",
+    "mocha": "^8.1.3",
+    "sinon": "^9.0.3",
+    "sinon-chai": "^3.5.0",
+    "typescript": "^3.9.7",
+    "uuid": "^8.3.0"
+  },
+  "author": "Anoosh",
+  "license": "ISC",
+  "dependencies": {
+    "kafkajs": "^1.15.0"
+  }
+}
