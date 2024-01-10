@@ -40,4 +40,12 @@ export default class Consumer {
   public async consume(consumerRunConfig: ConsumerRunConfig): Promise<void> {
     await this.consumer.run(consumerRunConfig);
   }
+
+  public async disconnect(): Promise<void> {
+    await this.consumer.disconnect();
+  }
+
+  public async stop(): Promise<void> {
+    await this.consumer.stop();
+  }
 }
