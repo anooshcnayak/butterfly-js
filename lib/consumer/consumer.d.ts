@@ -8,4 +8,6 @@ export default class Consumer {
     constructor(config: ConsumerConfig, logger?: any);
     connect(): Promise<void>;
     consume(consumerRunConfig: ConsumerRunConfig): Promise<void>;
+    disconnect(): Promise<void>;
+    stop(): Promise<void>;
 }
